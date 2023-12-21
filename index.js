@@ -211,7 +211,7 @@ function movePlayer(direction) {
 }
 
 function draw() {
-    if (keyPressed && (firstKeyPressed || Date.now() - timePressed > 100)) {
+    if (keyPressed && (firstKeyPressed || Date.now() - timePressed > 500)) {
         firstKeyPressed = false;
         timePressed = Date.now();
         switch(whichKeyPressed) {
